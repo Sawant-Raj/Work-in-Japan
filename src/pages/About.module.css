@@ -1,0 +1,74 @@
+/* .container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .heading {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .paragraph {
+    font-style: italic;
+  }
+   */
+
+.carousel {
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.cardContainer {
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  bottom: 80px;
+  z-index: 5; /* Ensure the z-index is lower than the image */
+}
+
+.card {
+  width: 70vw;
+  height: 70vh;
+  background-color: #e6bfc3;
+  position: absolute;
+  right: 0;
+  z-index: 10; /* Ensure the z-index is higher than the container */
+}
+
+.image {
+  width: 55vw;
+  height: 50vh;
+  z-index: 999; /* Set a high z-index value for the image */
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right:30%;
+  border-radius: 25px;
+}
