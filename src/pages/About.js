@@ -1,27 +1,69 @@
 import React from "react";
 import classes from "./About.module.css";
-import japaneseImage from "../assets/japanese.jpg";
+import teaCeremoyImage from "../assets/japanese.jpg";
+import japaneseCultureImage from "../assets/japan-culture-scene.avif";
+import japaneseFoodImage from "../assets/ramen.png";
 
 const About = () => {
   return (
     <div className={classes.container}>
-      <section className={classes.carousel}></section>
       <section className={classes.gallery}>
         <div className={classes.cardContainer}>
           <div className={classes.card}></div>
-          <img className={classes.image} src={japaneseImage} alt="Restaurant"/>
+          <div className={classes.content}>
+            <img className={classes.image} src={japaneseCultureImage} />
+            <div className={classes.description}>
+              <h2 className={classes.title}>Japanese Culture</h2>
+              <p className={classes.text}>
+                Japanese culture is a captivating blend of tradition and
+                modernity, characterized by its rich heritage, intricate
+                rituals, and profound respect for harmony and balance.Japan's
+                technological advancements coexist harmoniously with its
+                reverence for ancient customs, creating a unique and dynamic
+                cultural tapestry.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      {/* <h2 className={classes.heading}>About Japan</h2>
-      <p className={classes.paragraph}>
-        Japan is a country known for its rich culture, fascinating history, and unique lifestyle. From traditional tea ceremonies to cutting-edge technology, Japan offers a diverse and captivating experience for visitors and residents alike.
-      </p>
-      <p className={classes.paragraph}>
-        Japanese culture is deeply rooted in tradition and respect. From the iconic cherry blossom festivals to the intricate art of sushi-making, every aspect of Japanese life reflects a sense of harmony and balance.
-      </p>
-      <p className={classes.paragraph}>
-        In addition to its cultural heritage, Japan is also known for its modern lifestyle and technological innovations. With bustling cities like Tokyo and Kyoto, as well as serene countryside landscapes, Japan offers something for everyone.
-      </p> */}
+      <section className={classes.gallery}>
+        <div className={classes.cardContainer}>
+          <div className={classes.card}></div>
+          <div className={classes.content}>
+            <img className={classes.image} src={teaCeremoyImage} />
+            <div className={classes.description}>
+              <h2 className={classes.title}>Tea ceremony in Japan</h2>
+              <p className={classes.text}>
+                The Japanese tea ceremony, known as "chanoyu" or "sado," is a
+                centuries-old ritual steeped in tradition and philosophy. Rooted
+                in Zen Buddhism, it emphasizes harmony, respect, purity, and
+                tranquility.n a custom tea room, every detail holds profound
+                meaning, from utensil arrangement to the host's gestures in the
+                Japanese tea ceremony.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={classes.gallery}>
+        <div className={classes.cardContainer}>
+          <div className={classes.card}></div>
+          <div className={classes.content}>
+            <img className={classes.image} src={japaneseFoodImage} />
+            <div className={classes.description}>
+              <h2 className={classes.title}>Japanese Food</h2>
+              <p className={classes.text}>
+                Japanese cuisine is renowned for its exquisite flavors,
+                meticulous preparation, and aesthetic presentation. Ramen, a
+                beloved comfort food, offers a hearty broth with noodles and an
+                array of toppings, satisfying both the palate and soul.Japanese
+                food delights not only the taste buds but also nourishes the
+                spirit with its cultural significance and attention to detail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

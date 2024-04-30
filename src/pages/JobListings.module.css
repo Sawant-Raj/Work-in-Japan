@@ -2,8 +2,7 @@
   max-width: 50rem;
   margin: 0 auto;
   padding: 3rem;
-  /* background-color: #843850; */
-  color:white;
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -35,7 +34,7 @@
 
 .job-item h3 {
   margin-bottom: 0.625rem;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .job-item p {
@@ -48,20 +47,20 @@
 }
 
 button {
-  padding: 10px 20px; /* Increase padding for better visual appeal */
-  margin-top: 1.30rem;
+  padding: 10px 20px;
+  margin-top: 1.3rem;
   border: none;
   border-radius: 20px;
-  color:#843850;
-  background-color: white; /* Base color */
+  color: #843850;
+  background-color: white;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .input-container {
-  margin-top: 1rem; /* Add some space above the input */
+  margin-top: 1rem;
 }
 
 .input-container input {
@@ -70,13 +69,21 @@ button {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  outline: none; /* Remove outline on focus */
+  outline: none;
 }
 
 .input-container input::placeholder {
-  color: #999; /* Placeholder text color */
+  color: #999;
 }
 
 .input-container input:focus {
-  border-color: #843850; /* Border color on focus */
+  border-color: #843850;
+}
+
+.details-button {
+  margin-top: 10px;
+}
+
+.description-container {
+  padding-top: 10px;
 }

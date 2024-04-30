@@ -24,7 +24,7 @@ const Home = () => {
       </div>
 
       <div className={classes.gradient}>
-        <h3 className={classes.highlight}>Key Highlights:</h3>
+        <h3 className={classes.highlight}>Growth and Trends</h3>
 
         <div className={classes.cardContainer}>
           <div className={classes.gridCard}>
@@ -87,35 +87,6 @@ const Home = () => {
           </div>
         </div>
       </footer>
-
-      {/* <h2 className={classes.heading}>Work Opportunities in Japan</h2>
-      <p className={classes.overview}>
-        Japan offers a wide range of work opportunities across various sectors
-        and industries. Whether you're interested in technology, finance,
-        healthcare, or education, Japan has something to offer.
-      </p>
-      <h3 className={classes.highlight}>Key Highlights:</h3>
-      <div className={classes.cardContainer}>
-        <div className={classes.card}>
-          <h4 className={classes.highlight}>High demand for skilled professionals in IT and engineering</h4>
-          <p className={classes.highlightDesc}>
-            Japan's technology sector is thriving, with numerous opportunities
-            for skilled professionals in IT and engineering fields.
-          </p>
-        </div>
-        <div className={classes.card}>
-          <h4 className={classes.highlight}>Booming startup ecosystem in cities like Tokyo and Osaka</h4>
-          <p className={classes.highlightDesc}>
-            Tokyo and Osaka are known for their vibrant startup scenes, attracting
-            entrepreneurs and investors from around the world.
-          </p>
-        </div>
-      </div>
-      <p className={classes.additionalInfo}>
-        In addition to these highlights, Japan is known for its rich culture,
-        delicious cuisine, and stunning landscapes. Working in Japan can provide
-        not only professional growth but also unforgettable experiences.
-      </p> */}
     </div>
   );
 };

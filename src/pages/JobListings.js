@@ -1,10 +1,9 @@
 import React, { useState, useContext } from "react";
 import classes from "./JobListings.module.css";
 import JobContext from "../store/job-context";
-import JobDetails from "./JobDetails"; // Import the JobDetails component
 
 const JobListings = () => {
-  const jobCtx = useContext(JobContext); // Access jobData from the context
+  const jobCtx = useContext(JobContext);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedJob, setSelectedJob] = useState(null);
 
@@ -13,7 +12,7 @@ const JobListings = () => {
   };
 
   const handleShowDetails = (job) => {
-    setSelectedJob(job);
+    setSelectedJob(selectedJob === job ? null : job);
   };
 
   const filteredJobListings = jobCtx.jobData.filter((job) =>
@@ -39,14 +38,22 @@ const JobListings = () => {
               <h3>{job.title}</h3>
               <p>{job.company_name}</p>
               <p className={classes.location}>{job.location}</p>
-              <button onClick={() => handleShowDetails(job)}>
-                Show Details
+              <button
+                className={classes["details-button"]}
+                onClick={() => handleShowDetails(job)}
+              >
+                {selectedJob === job ? "Hide Details" : "Show Details"}
               </button>
+              {selectedJob === job && (
+                <div
+                  className={classes["description-container"]}
+                  dangerouslySetInnerHTML={{ __html: job.description }}
+                />
+              )}
             </div>
           </li>
         ))}
       </ul>
-      {selectedJob && <JobDetails job={selectedJob} />}
     </div>
   );
 };

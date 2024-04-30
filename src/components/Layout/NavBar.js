@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./NavBar.module.css";
-import Translate from "../translate/Translate"
+import Translate from "../translate/Translate";
 
 const NavBar = () => {
   return (
@@ -19,8 +19,8 @@ const NavBar = () => {
           </li>
         </ul>
         <div className={classes.translateContainer}>
-        <Translate /> 
-      </div>
+          <Translate />
+        </div>
       </nav>
     </>
   );
